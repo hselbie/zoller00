@@ -86,6 +86,7 @@ view: crime {
   }
 
   dimension: unique_key {
+    primary_key: yes
     type: number
     sql: ${TABLE}.unique_key ;;
   }
@@ -101,7 +102,7 @@ view: crime {
   }
 
   dimension: year {
-    type: number
+    type: date_year
     sql: ${TABLE}.year ;;
   }
 
@@ -110,7 +111,7 @@ view: crime {
     sql: ${TABLE}.zipcode ;;
   }
 
-  measure: count {
+  measure: count_events {
     type: count
     drill_fields: []
   }
