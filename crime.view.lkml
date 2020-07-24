@@ -49,3 +49,22 @@ view: crime {
     hidden: yes }
   
   }
+
+#measure view
+
+view: +crime {
+  measure: census_tract_total {   type: sum
+    sql: ${TABLE}.census_tract ;; }
+  measure: council_district_code_total {   type: sum
+    sql: ${TABLE}.council_district_code ;; }
+  measure: latitude_total {   type: sum
+    sql: ${TABLE}.latitude ;; }
+  measure: longitude_total {   type: sum
+    sql: ${TABLE}.longitude ;; }
+  measure: x_coordinate_total {   type: sum
+    sql: ${TABLE}.x_coordinate ;; }
+  measure: y_coordinate_total {   type: sum
+    sql: ${TABLE}.y_coordinate ;; }
+  measure: year_total {   type: sum
+    sql: ${TABLE}.year ;; }
+  }
