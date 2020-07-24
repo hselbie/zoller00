@@ -54,17 +54,17 @@ view: crime {
 
 view: +crime {
   measure: census_tract_total {   type: sum
-    sql: ${TABLE}.census_tract ;; }
+    sql: census_tract ;; }
   measure: council_district_code_total {   type: sum
-    sql: ${TABLE}.council_district_code ;; }
+    sql: council_district_code ;; }
   measure: latitude_total {   type: sum
-    sql: ${TABLE}.latitude ;; }
+    sql: latitude ;; }
   measure: longitude_total {   type: sum
-    sql: ${TABLE}.longitude ;; }
+    sql: longitude ;; }
   measure: x_coordinate_total {   type: sum
-    sql: ${TABLE}.x_coordinate ;; }
+    sql: x_coordinate ;; }
   measure: y_coordinate_total {   type: sum
-    sql: ${TABLE}.y_coordinate ;; }
+    sql: y_coordinate ;; }
   measure: year_total {   type: sum
-    sql: ${TABLE}.year ;; }
+    sql: year ;; }
   }
