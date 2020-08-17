@@ -1,6 +1,6 @@
 - dashboard: updated
   title: Updated
-  layout: tile
+  layout: newspaper
   tile_size: 100
 
   elements:
