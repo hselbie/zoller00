@@ -1,11 +1,9 @@
-- dashboard: updated
-  title: Updated
+- dashboard: imported_new_hugo
+  title: imported_new_hugo
   layout: newspaper
-  tile_size: 100
-
   elements:
   - title: test
-    name: add_a_unique_name_1597692669
+    name: test
     model: crime
     explore: crime
     type: table
@@ -13,3 +11,8 @@
     sorts: [crime.count_events desc]
     limit: 500
     query_timezone: America/Los_Angeles
+    listen: {}
+    row: 0
+    col: 0
+    width: 24
+    height: 9
