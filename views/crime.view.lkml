@@ -1,5 +1,5 @@
 view: crime {
-  sql_table_name: `first-project-284016.test.crime`
+  sql_table_name: `1first-project-284016.test.crime`
     ;;
 
   dimension: address {
