@@ -15,6 +15,8 @@ view: crime {
     hidden: yes
     sql: ${TABLE}.address ;;
     }
+
+  dimension: test {}
   dimension: census_tract {   hidden: yes
     type: number }
   dimension: clearance_status {   type: string
