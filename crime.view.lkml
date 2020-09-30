@@ -2,11 +2,19 @@
 
 
 view: crime {
-  sql_table_name: schema_name.crime ;;
-  
-  
-  dimension: address {   type: string
-    hidden: yes }
+  sql_table_name:
+  {% if user_attribure == demo %}
+      demo.schema_name.crime
+  {% else %}
+      schema_name.crime
+  {% endif %};;
+
+
+  dimension: address {
+    type: string
+    hidden: yes
+    sql: ${TABLE}.address ;;
+    }
   dimension: census_tract {   hidden: yes
     type: number }
   dimension: clearance_status {   type: string
@@ -27,7 +35,7 @@ view: crime {
     type: number }
   dimension: primary_type {   type: string
     hidden: yes }
-  dimension: unique_key { 
+  dimension: unique_key {
     hidden: yes
     type: number
     primary_key: yes }
@@ -39,15 +47,15 @@ view: crime {
     type: number }
   dimension: zipcode {   type: string
     hidden: yes }
-  dimension_group: clearance_date { 
-    timeframes: [ raw, year, quarter, month, week, date, day_of_week, hour, hour_of_day, minute, time, time_of_day,] 
+  dimension_group: clearance_date {
+    timeframes: [ raw, year, quarter, month, week, date, day_of_week, hour, hour_of_day, minute, time, time_of_day,]
     type: time
     hidden: yes }
-  dimension_group: timestamp { 
-    timeframes: [ raw, year, quarter, month, week, date, day_of_week, hour, hour_of_day, minute, time, time_of_day,] 
+  dimension_group: timestamp {
+    timeframes: [ raw, year, quarter, month, week, date, day_of_week, hour, hour_of_day, minute, time, time_of_day,]
     type: time
     hidden: yes }
-  
+
   }
 
 #measure view

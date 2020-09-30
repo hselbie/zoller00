@@ -1,4 +1,5 @@
 - dashboard: crimedashlet_generated
+  preferred_viewer: dashboards-next
   elements:
   - col: 12
     conditional_formatting_include_nulls: false
@@ -19,7 +20,7 @@
     limit: 500
     limit_displayed_rows: false
     listen: {}
-    model: crime
+#     model: crime
     name: New Tile
     ordering: none
     plot_size_by_field: false
@@ -78,7 +79,7 @@
     limit: 500
     limit_displayed_rows: false
     listen: {}
-    model: crime
+#     model: crime
     name: type of assault
     ordering: none
     plot_size_by_field: false
@@ -133,7 +134,7 @@
     legend_position: center
     limit: 10
     limit_displayed_rows: false
-    model: crime
+#     model: crime
     name: single_viz
     ordering: none
     plot_size_by_field: false

@@ -1,5 +1,5 @@
 view: crime {
-  sql_table_name: `1first-project-284016.test.crime`
+  sql_table_name: `first-project-284016.test.crime`
     ;;
 
   dimension: address {
@@ -111,8 +111,22 @@ view: crime {
     sql: ${TABLE}.zipcode ;;
   }
 
+  dimension: filters {
+    sql: @{find_filters} ;;
+  }
+
+  measure: drill_link_listener {
+    hidden: yes
+    type: sum
+    sql: 1 ;;
+    drill_fields: []
+  }
+
   measure: count_events {
     type: count
-    drill_fields: []
+    link: {
+      label: "{{ _user_attributes['first_name'] }}'s Custom Drill"
+      url: "@{per_user_drilling}"
+    }
   }
 }
