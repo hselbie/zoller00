@@ -9,6 +9,7 @@ view: crime {
 
   dimension: test {}
 
+  dimension: test11 {}
   dimension: census_tract {
     type: number
     sql: ${TABLE}.census_tract ;;
