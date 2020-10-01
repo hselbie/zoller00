@@ -7,6 +7,8 @@ view: crime {
     sql: ${TABLE}.address ;;
   }
 
+  dimension: test {}
+
   dimension: census_tract {
     type: number
     sql: ${TABLE}.census_tract ;;
