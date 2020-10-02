@@ -1,4 +1,4 @@
-connection: "biquery_publicdata_standard_sql"
+connection: "bq-public"
 
 include: "/views/*.view"
 include: "/*.dashboard"
