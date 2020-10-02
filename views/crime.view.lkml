@@ -7,10 +7,7 @@ view: crime {
     sql: ${TABLE}.address ;;
   }
 
-  dimension: test {}
-
-  dimension: test11 {}
-  dimension: test111 {}
+  dimension: release_branch {}
   dimension: census_tract {
     type: number
     sql: ${TABLE}.census_tract ;;
