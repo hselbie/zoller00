@@ -13,3 +13,5 @@ explore: crime {}
 
 
 #### Second release branch i'm going to rename the model
+
+## NOTE i don't merge my release branches back to my master branch.
