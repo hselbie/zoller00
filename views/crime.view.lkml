@@ -8,6 +8,9 @@ view: crime {
   }
 
   dimension: release_branch {}
+
+  dimension: new_branch {}
+
   dimension: census_tract {
     type: number
     sql: ${TABLE}.census_tract ;;
