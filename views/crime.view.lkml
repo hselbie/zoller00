@@ -7,6 +7,8 @@ view: crime {
     sql: ${TABLE}.address ;;
   }
 
+  dimension: view11 {}
+
   dimension: release_branch {}
 
   dimension: new_branch {}
