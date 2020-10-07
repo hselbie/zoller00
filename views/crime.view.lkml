@@ -2,6 +2,8 @@ view: crime {
   sql_table_name: `first-project-284016.test.crime`
     ;;
 
+  dimension: release_two {}
+
   dimension: address {
     type: string
     sql: ${TABLE}.address ;;
